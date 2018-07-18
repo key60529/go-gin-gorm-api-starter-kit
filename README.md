@@ -3,17 +3,15 @@
 > A golang API which include gin and gorm packages starter kit.
 
 
-
 ## Requirements
 
-- go: go 1.9 or newer
-- dep: stable 0.4.1 or newer
+- [go](https://github.com/golang/go): go 1.9 or newer
+- [dep](https://github.com/golang/dep): stable 0.4.1 or newer
 
 #### Packages
 
 - [gin](https://github.com/gin-gonic/gin)
 - [gorm](https://github.com/jinzhu/gorm)
-
 
 
 ## Usage
@@ -35,7 +33,6 @@ const (
 )
 ...
 ```
-
 
 
 #### Serve
