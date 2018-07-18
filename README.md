@@ -24,14 +24,14 @@
 // app/database/db.go
 ...
 const (
-	//DbHost for example 127.0.0.1:3306
-    DbHost = ""
-	//DbUser username to login your mysql
-	DbUser = ""
-	//DbPassword mysql password
-	DbPassword = ""
-	//DbName database name
-	DbName = ""
+  //DbHost for example 127.0.0.1:3306
+  DbHost = ""
+  //DbUser username to login your mysql
+  DbUser = ""
+  //DbPassword mysql password
+  DbPassword = ""
+  //DbName database name
+  DbName = ""
 )
 ...
 ```
