@@ -1,7 +1,7 @@
 package main
 
 import (
-	"kayl-space_backend/app/controller"
+	"go-gin-gorm-api-starter-kit/app/controller"
 
 	"github.com/gin-gonic/gin"
 	_ "github.com/jinzhu/gorm/dialects/mysql"

@@ -2,8 +2,8 @@ package controller
 
 import (
 	"fmt"
-	"kayl-space_backend/app/database"
-	"kayl-space_backend/app/models"
+	"go-gin-gorm-api-starter-kit/app/database"
+	"go-gin-gorm-api-starter-kit/app/models"
 
 	"github.com/gin-gonic/gin"
 )

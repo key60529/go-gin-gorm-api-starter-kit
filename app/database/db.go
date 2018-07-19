@@ -27,17 +27,18 @@ func init() {
 	dbinfo := fmt.Sprintf("%s:%s@tcp(%s)/%s?charset=utf8&parseTime=True&loc=Local",
 		DbUser, DbPassword, DbHost, DbName)
 
-	db, err = ConnectDB(dbinfo)
+	db, err = connectDB(dbinfo)
 	if err != nil {
 		fmt.Println(err)
 	}
 }
 
-// ConnectDB open a connection
-func ConnectDB(dataSourceName string) (*gorm.DB, error) {
+// connectDB open a connection
+func connectDB(dataSourceName string) (*gorm.DB, error) {
 	db, err = gorm.Open("mysql", dataSourceName)
 	if err != nil {
 		fmt.Println("failed to connect database")
+		return nil, err
 	}
 	return db, nil
 }
