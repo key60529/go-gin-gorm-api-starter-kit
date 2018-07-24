@@ -2,6 +2,7 @@ package database
 
 import (
 	"fmt"
+	"go-gin-gorm-api-starter-kit/app/models"
 
 	"github.com/jinzhu/gorm"
 
@@ -30,6 +31,8 @@ func init() {
 	db, err = connectDB(dbinfo)
 	if err != nil {
 		fmt.Println(err)
+	} else {
+		db.AutoMigrate(&models.User{})
 	}
 }
 
